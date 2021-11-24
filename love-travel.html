@@ -1,0 +1,955 @@
+<style>
+    /* html{
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    
+}
+#main{
+    overflow: hidden;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease
+}
+ #slider{
+     background-image: url('./assets/img/parallax.jpg');
+     height: 150%;
+     background-position: center;
+     background-repeat: no-repeat;
+ } */
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love travel</title>
+    <link rel="icon" type="image/png" href="./assets/img/slack.svg"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="main">
+      
+           
+        <div class="buy"> 
+            <p>54$</p>
+        </div>
+        <div id="header" class=" class_header">
+            <div class="header-nav">
+                <div class="header-nav__logo">
+                    <img src="./assets/img/logo.png" alt="Logo-Travel" class="logo-top">
+                </div>
+                <div class="header-nav__menu">
+                    <ul>
+                       <li>  <a href=""> HOME</a> </li>
+                       <li> <a href=""> PACKAGES</a> 
+                            <ul class="subnav">
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="">Tour packages</a> <i class="icon-right fas fa-caret-right"></i>
+                                    <ul class="subnav-item">
+                                        <li><a href="">Custom map</a> </li>
+                                        <li><a href="">Custom map</a> </li>
+                                        <li><a href="">Custom map</a> </li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Cart</a></li>
+                                <li><a href="">Cart</a></li>
+                            </ul>
+                        
+                       </li>
+                       <li> <a href=""> SHOP</a> 
+                        <ul class="subnav">
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Cart</a></li>
+                        </ul>
+                        </li>
+                       <li> <a href=""> ABOUT US</a><ul class="subnav">
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Cart</a></li>
+                    </ul> </li>
+                       <li> <a href=""> PAGES</a><ul class="subnav">
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Cart</a></li>
+                    </ul> </li>
+                       <li> <a href=""> NEWS</a> <ul class="subnav">
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Cart</a><i class="icon-right fas fa-caret-right"></i><ul class="subnav-item">
+                            <li><a href="">Custom map</a> </li>
+                            <li><a href="">Custom map</a> </li>
+                            <li><a href="">Custom map</a> </li>
+                        </ul></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Cart</a></li>
+                    </ul></li>
+                       <li> <a href=""> CONTACT</a> <ul class="subnav">
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Cart</a></li>
+                    </ul></li>
+                       <li> <a href="#"> BOOK NOW</a> </li>
+                    </ul>
+                </div>
+               
+                <div class="moble-menu" id="moble-menu">
+                    <i class="icon-menu fas fa-bars"></i>
+                </div>
+                
+            </div>
+            <div class="nav-moble" id="nav-moble">
+            <div class="closed" id="closed-menu"><i class="fas icon-close-moble fa-times"></i></div>
+
+                <ul id="nav-moble-list">
+                    <li> <a href="">HOME</a> 
+                        
+                    </li>
+                    <li> <a href="#">packages</a> 
+                        <ul id="nav-moble-list-item">
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Cart</a>
+                                <ul id="subnav-item-moble">
+                                    <li><a href="">Custom map</a> </li>
+                                    <li><a href="">Custom map</a> </li>
+                                    <li><a href="">Custom map</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Cart</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#">shop</a> 
+                        <ul id="nav-moble-list-item">
+                            <li><a href="">Cart</a> </li>
+                            <li><a href="">Cart</a> </li>
+                            <li><a href="">Cart</a> </li>
+                            <li><a href="">Cart</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="#">about us</a> 
+                        <ul id="nav-moble-list-item">
+                            <li><a href="">Cart</a> </li>
+                            <li><a href="">Cart</a> </li>
+                            <li><a href="">Cart</a> </li>
+                            <li><a href="">Cart</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="#">pages</a> 
+                        <ul id="nav-moble-list-item">
+                            <li><a href="">Cart</a> </li>
+                            <li><a href="">Cart</a> </li>
+                            <li><a href="">Cart</a>
+                                <ul id="subnav-item-moble">
+                                    <li><a href="">Custom map</a> </li>
+                                    <li><a href="">Custom map</a> </li>
+                                    <li><a href="">Custom map</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="">Cart</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="#">news</a>
+                        <ul id="nav-moble-list-item">
+                            <li><a href="">Cart</a> </li>
+                            <li><a href="">Cart</a> </li>
+                            <li><a href="">Cart</a> </li>
+                            <li><a href="">Cart</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="#"> BOOK NOW</a> </li>
+
+                </ul>
+            </div>
+        </div> 
+       
+        
+        <div id="slider">
+            <div class="slider-img">
+            <div class="grid text-conten"> 
+                <h2 class="col l-12 text-heading">Search your next <span class="unline"> Holiday</span>
+                </h2>
+                <div class="text-des">CHECK OUR BEST PROMOTIONS</div>
+                <div class="col l-12 slider-search">
+                    <div class="row custom_slider-search">
+                        <div class="col l-4 m-0 c-0"></div>
+                        <div class="col l-4 m-12 c-12 ">
+                            
+                            <form action="#" method="get" id="frm_slider-search"> 
+                              
+                                    
+                                        <select name="" id="" class="row search">
+                                            <div class="col l-4 m-12 c-12">
+                                            <option value="0">Choose your Destination...</option>
+                                            <option value="">Europe</option>
+                                            <option value="">&nbsp;&nbsp; - Italy</option>
+                                            <option value="">&nbsp;&nbsp; - Netherlands</option>
+                                            <option value="">Asia</option>
+                                            <option value="">&nbsp;&nbsp; - Thailandia</option>
+                                            <option value="">United States</option>
+                                            <option value="">Oceania</option></div>
+                                        </select>
+                                        <input type="submit" value="">
+                                   
+                                 
+                                
+                            </form>
+                            <!-- <i class="icon-search fas fa-search"></i> -->
+                        </div>
+                        <div class="col l-4 m-0 c-0"></div>
+                    </div>
+                </div>
+                <div class="heigh_choose-travel"></div>
+                <div class="gird custom_grid-wide">
+                    <div class="row choose-travel">
+                        <div class="col l-3 m-0 c-0"></div>
+                        <div class="col l-6 m-12 c-12 custom_choose-travel">
+                            <div class="travel"> 
+                                <a href="#"><img src="./assets/img/t-relax.png" alt="Relax"></a>
+                                <a href="#">RELAX</a>
+                            </div>
+                            <div class="travel"> 
+                                <a href="#"><img src="./assets/img/t-relax.png" alt="Relax"></a>
+                                <a href="#">Relax</a>
+                            </div>
+                            <div class="travel"> 
+                                <a href="#"><img src="./assets/img/t-relax.png" alt="Relax"></a>
+                                <a href="#">Relax</a>
+                            </div>
+                            <div class="travel"> 
+                                <a href="#"><img src="./assets/img/t-relax.png" alt="Relax"></a>
+                                <a href="#">Relax</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col l-3 m-0 c-0"></div>
+                        
+                    </div>
+                </div>
+                
+            </div>  
+        </div>
+
+        </div>
+        <div id="body">
+            <div id="local">
+                <div class="text-heading">
+                    <h5>OUR PROPOSALS</h5>
+                    <h3>OUR <span>DESTINATIONS</span> </h3>
+                </div>
+                <div class="grid wide">
+                    <div class="local-travel">
+                        <div class="travel-list">
+                           
+                            <div class="info-local">
+                                <img src="./assets/img/destination-1.jpg" alt="" class="img-local">
+                                <div class="content-local">
+                                    <img src="./assets/img/local-arch1.png" alt="" class="icon-local">
+                                    <div class="des-local">
+                                        <h6>Europe</h6>
+                                        <p>3 PACKAGES</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="info-local-hovered">
+                                <div class="display-flex">
+                                    <h6>Packages</h6>
+                                <ul class="list-item">
+                                    <li><a href=""><p>Berlin</p> </a> </li>
+                                    <li><a href=""><p>Amsterdam</p> </a> </li>
+                                    <li><a href=""><p>Tuscany</p> </a> </li>
+                                </ul>
+                                <div class="view-dis">
+                                    <a href="">VIEW DISTINATION</a>
+                                </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="travel-list">
+                           
+                            <div class="info-local">
+                                <img src="./assets/img/destination-1.jpg" alt="" class="img-local">
+                                <div class="content-local">
+                                    <img src="./assets/img/local-arch1.png" alt="" class="icon-local">
+                                    <div class="des-local">
+                                        <h6>Europe</h6>
+                                        <p>3 PACKAGES</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="info-local-hovered">
+                                <div class="display-flex">
+                                    <h6>Packages</h6>
+                                <ul class="list-item">
+                                  
+                                    <li><a href=""><p>Tuscany</p> </a> </li>
+                                </ul>
+                                <div class="view-dis">
+                                    <a href="">VIEW DISTINATION</a>
+                                </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="travel-list">
+                           
+                            <div class="info-local">
+                                <img src="./assets/img/destination-1.jpg" alt="" class="img-local">
+                                <div class="content-local">
+                                    <img src="./assets/img/local-arch1.png" alt="" class="icon-local">
+                                    <div class="des-local">
+                                        <h6>Europe</h6>
+                                        <p>3 PACKAGES</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="info-local-hovered">
+                                <div class="display-flex">
+                                    <h6>Packages</h6>
+                                <ul class="list-item">
+                                    <li><a href=""><p>Berlin</p> </a> </li>
+                                    <li><a href=""><p>Amsterdam</p> </a> </li>
+                                    <li><a href=""><p>Tuscany</p> </a> </li>
+                                </ul>
+                                <div class="view-dis">
+                                    <a href="">VIEW DISTINATION</a>
+                                </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="local-travel">
+                        <div class="travel-list">
+                           
+                            <div class="info-local">
+                                <img src="./assets/img/destination-1.jpg" alt="" class="img-local">
+                                <div class="content-local">
+                                    <img src="./assets/img/local-arch1.png" alt="" class="icon-local">
+                                    <div class="des-local">
+                                        <h6>Europe</h6>
+                                        <p>3 PACKAGES</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="info-local-hovered">
+                                <div class="display-flex">
+                                    <h6>Packages</h6>
+                                <ul class="list-item">
+                                    <li><a href=""><p>Berlin</p> </a> </li>
+                                    <li><a href=""><p>Tuscany</p> </a> </li>
+                                </ul>
+                                <div class="view-dis">
+                                    <a href="">VIEW DISTINATION</a>
+                                </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="travel-list">
+                           
+                            <div class="info-local">
+                                <img src="./assets/img/destination-1.jpg" alt="" class="img-local">
+                                <div class="content-local">
+                                    <img src="./assets/img/local-arch1.png" alt="" class="icon-local">
+                                    <div class="des-local">
+                                        <h6>Europe</h6>
+                                        <p>3 PACKAGES</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="info-local-hovered">
+                                <div class="display-flex">
+                                    <h6>Packages</h6>
+                                <ul class="list-item">
+                                    <li><a href=""><p>Berlin</p> </a> </li>
+                                    
+                                </ul>
+                                <div class="view-dis">
+                                    <a href="">VIEW DISTINATION</a>
+                                </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="travel-list">
+                           
+                            <div class="info-local">
+                                <img src="./assets/img/destination-1.jpg" alt="" class="img-local">
+                                <div class="content-local">
+                                    <img src="./assets/img/local-arch1.png" alt="" class="icon-local">
+                                    <div class="des-local">
+                                        <h6>Europe</h6>
+                                        <p>3 PACKAGES</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="info-local-hovered">
+                                <div class="display-flex">
+                                    <h6>Packages</h6>
+                                <ul class="list-item">
+                                    <li><a href=""><p>Berlin</p> </a> </li>
+                                    <li><a href=""><p>Amsterdam</p> </a> </li>
+                                    
+                                </ul>
+                                <div class="view-dis">
+                                    <a href="">VIEW DISTINATION</a>
+                                </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+<!-- ------------- -->
+            </div>
+            <div class="margin-top-48">
+                <div class="grid">
+                    <div class="row backgroud custom1">
+                        <div class="col l-2 m-12 c-12 custom  "></div>
+                        <div class="col l-4 m-12 c-12 custom custom_padding1">
+                            <h6 class="title-heading " >Your</br>Next
+                                <span>Holiday</span></h6>
+                        </div>
+                        <div class="col l-4 m-12 c-12 custom custom_padding2">
+                            <a href="#" class="viewall">VIEW ALL PACKAGES</a>
+                        </div>
+                        <div class="col l-2 m-12 c-12 custom  "></div>
+                 
+                    </div>
+                </div>
+                
+            </div>
+            <div class="margin-top-70">
+                <div class="grid wide">
+                    <div class="row row-padding">
+                        <div class="col l-4 custom_padding40">
+                            <div class="text-heading text-heading-align">
+                                <div id="id-text-heading">
+                                    <h5>NORTH AMERICA</h5>
+                                    <h3>The Best  <span>Beaches</span> </h3>
+                                </div>
+                                <div class="info">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. 
+                                        Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                                    </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. 
+                                        Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                                    </p>
+                                    <p class="info-last"><span class="unline">800</span> <span class="font-size-30">500 $</span> <span class="color-black"> / FOR PERSON</span></p>
+                                   
+                                    <a href="#" class="btn-book-now">BOOK NOW</a>
+                                   
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col l-8 flex">
+                            <div class="right-silder relative">
+                                <div id="mySlider">
+                                    
+                                </div>
+                                <div class="btn">
+                                    <button id="0"  class="active" ></button>
+                                    <button id="1" ></button>
+                                    <button id="2" ></button>
+                                </div>
+                                <div class="row width_100 right-silder-bottom">    
+                                    <!-- <div class="col l-2"></div>  
+                                    <div class="col l-8 right-silder-bottom">
+                                        <span class="relative"><h1>000</h1><h3>DAYS</h3></span>
+                                        <span class="relative"><h1>00</h1><h3>hours</h3></span>
+                                        <span class="relative"><h1>00</h1><h3>minuter</h3></span>
+                                        <span class="relative"><h1>00</h1><h3>seconds</h3></span>
+                                    </div>       
+                                    <div class="col l-2"></div>       -->
+                                    <div class="col l-2 m-0"></div>
+                                    <div class="col l-2 m-3 c-12 right-silder-bottom-time"><span class="relative"><h1>000</h1><h3>DAYS</h3></span></div>
+                                    <div class="col l-2 m-3 c-12 right-silder-bottom-time"><span class="relative"><h1>00</h1><h3>hours</h3></span></div>
+                                    <div class="col l-2 m-3 c-12 right-silder-bottom-time"><span class="relative"><h1>00</h1><h3>minuter</h3></span></div>                                   
+                                    <div class="col l-2 m-3 c-12 right-silder-bottom-time"><span class="relative"><h1>00</h1><h3>seconds</h3></span></div>                                                               
+                                    <div class="col l-2 m-0"></div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row row-padding margin-top-120">
+                        <div class="col l-4 ">
+                            <div class="display-flex2">
+                                <div class="icon-left"><img src="./assets/img/icon-around.png" alt=""></div>
+                            <div class="posts">
+                                <h4>Wourld Tour</h4>
+                                <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                                <a href="#">View More</a>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col l-4">
+                            <div class="display-flex2">
+                                <div class="icon-left"><img src="./assets/img/icon-around.png" alt=""></div>
+                            <div class="posts">
+                                <h4>Wourld Tour</h4>
+                                <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                                <a href="#">View More</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="display-flex2">
+                                <div class="icon-left"><img src="./assets/img/icon-around.png" alt=""></div>
+                            <div class="posts">
+                                <h4>Wourld Tour</h4>
+                                <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                                <a href="#">View More</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-top-70">
+                <div class="gird row baner2">
+                    <div class="col l-6 c-12 img img1">
+                    <div class="des-baner2">
+                        <p>01. LAST MINUTE
+                        </p>
+                        <h4>Discover Cities
+                        </h4>
+                        <a href="#">DETAILS</a>
+                    </div>
+                        
+                    </div>
+                    <div class="col l-6 c-12 img img2">
+                        <div class="des-baner2">
+                            <p>01. LAST MINUTE
+                            </p>
+                            <h4>Discover Cities
+                            </h4>
+                            <a href="#">DETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-top-70">
+                <div class="text-heading-promotions">
+                    <h5>PROMOTIONS</h5>
+                    <h3>OUR <span>PACKAGES</span> </h3>
+                </div>
+                <div class="grid wide">
+                    <div class=" packages-promotions">
+                        <!-- <span>packages-promotions</span>  -->
+                        <div class="packages-promotions-travel">
+                            <div class="position position_relitive">
+                                <img class="imgfirt" src="./assets/img/package-1-1024x640.jpg" alt="">
+                                <div class="position_ablo">
+                                    <a href="#">
+                                <img src="./assets/img/arch.png" alt="" class="img-right-bottom">
+
+                                    </a>
+
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="des-package">
+                                <a href="#"><h3>Berlin</h3></a>
+                                <div class="local-package">
+                                    <img  src="./assets/img/icon-pin-grey.png" alt="">
+                                    <a href="#"> Europe</a>
+                                </div>
+                                <div class="border-bottom-1px"></div>
+                                <div class="package-money">
+                                    <div class="package-money-list">
+                                        <a href=""><h6>CULTURAL</h6> </a> 
+                                        <div class="group">
+                                            <a href=""><h6>RELAX </h6></a>  <span>+1</span>
+
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="money-tour">
+                                        <a href="">700 $</a>
+
+                                    </div>
+                                </div>
+                                <div class="border-bottom-1px"></div>
+                                <div class="package-money-des">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                    </p>
+                                    <a href="" class="bgroud-yellow">DETAILS</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class=" packages-promotions-travel">
+                            <div class="position position_relitive">
+                                <img class="imgfirt" src="./assets/img/package-1-1024x640.jpg" alt="">
+                                <div class="position_ablo">
+                                    <a href="#">
+                                <img src="./assets/img/arch.png" alt="" class="img-right-bottom">
+
+                                    </a>
+
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="des-package">
+                                <a href="#"><h3>Berlin</h3></a>
+                                <div class="local-package">
+                                    <img src="./assets/img/icon-pin-grey.png" alt="">
+                                    <a href="#"> Europe</a>
+                                </div>
+                                <div class="border-bottom-1px"></div>
+                                <div class="package-money">
+                                    <div class="package-money-list">
+                                        <a href=""><h6>CULTURAL</h6> </a> 
+                                        <div class="group">
+                                            <a href=""><h6>RELAX </h6></a>  <span>+1</span>
+
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="money-tour">
+                                        <a href="">700 $</a>
+
+                                    </div>
+                                </div>
+                                <div class="border-bottom-1px"></div>
+                                <div class="package-money-des">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                    </p>
+                                    <a href="" class="bgroud-yellow">DETAILS</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="packages-promotions-travel">
+                            <div class="position position_relitive">
+                                <img class="imgfirt" src="./assets/img/package-1-1024x640.jpg" alt="">
+                                <div class="position_ablo">
+                                    <a href="#">
+                                <img src="./assets/img/arch.png" alt="" class="img-right-bottom">
+
+                                    </a>
+
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="des-package">
+                                <a href="#"><h3>Berlin</h3></a>
+                                <div class="local-package">
+                                    <img src="./assets/img/icon-pin-grey.png" alt="">
+                                    <a href="#"> Europe</a>
+                                </div>
+                                <div class="border-bottom-1px"></div>
+                                <div class="package-money">
+                                    <div class="package-money-list">
+                                        <a href=""><h6>CULTURAL</h6> </a> 
+                                        <div class="group">
+                                            <a href=""><h6>RELAX </h6></a>  <span>+1</span>
+
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="money-tour">
+                                        <a href="">700 $</a>
+
+                                    </div>
+                                </div>
+                                <div class="border-bottom-1px"></div>
+                                <div class="package-money-des">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                    </p>
+                                    <a href="" class="bgroud-yellow">DETAILS</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-top-70"></div>
+            
+        </div>
+        <div id="footer">
+            <div class="footer-content">
+                <div class="footer-heading">
+                    <div class="header">
+                        <p>KEEP IN TOUCH</p>
+                        <h3>Travel with Us</h3>
+                    </div>
+                    <div class="send-mail">
+                        <input type="text" placeholder="Email...">
+                        <input type="button" value="SEND">
+                    </div>
+                </div>
+                <div class="grid wide">
+                   
+                    <div class="row  background-white paddiing-bottom-15px ">
+                        <div class="col l-6">
+                            <div class="footer-logo">
+                                <img src="./assets/img/logo-color.png" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh <span>condimentum</span>  venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.</p>
+                            <div class="social-network">
+                                <span><i class="fab fa-twitter"></i></span>
+                                <span><i class="fab fa-youtube"></i></span>
+                                <span><i class="fab fa-facebook-square"></i></span>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="row">
+                            <div class="col l-4">
+                                <h4 class="footer-content-title">OUR AGENCY</h4>
+                                <ul class="footer-content-list">
+                                    <li> <i class="fas fa-chevron-right"></i> Services</li>
+                                    <li> <i class="fas fa-chevron-right"></i>  Insurancee</li>
+                                    <li> <i class="fas fa-chevron-right"></i>  Agency</li>
+                                    <li> <i class="fas fa-chevron-right"></i> Tourism</li>
+                                    <li> <i class="fas fa-chevron-right"></i>  Payment</li>
+                                </ul>
+                            </div>
+                            <div class="col l-4">
+                                <h4 class="footer-content-title">OUR AGENCY</h4>
+                                <ul class="footer-content-list">
+                                    <li> <i class="fas fa-chevron-right"></i> Services</li>
+                                    <li> <i class="fas fa-chevron-right"></i>  Insurancee</li>
+                                    <li> <i class="fas fa-chevron-right"></i>  Agency</li>
+                                    <li> <i class="fas fa-chevron-right"></i> Tourism</li>
+                                    <li> <i class="fas fa-chevron-right"></i>  Payment</li>
+                                </ul>
+                            </div>
+                            <div class="col l-4">
+                                <h4 class="footer-content-title">OUR AGENCY</h4>
+                                <ul class="footer-content-list">
+                                    <li> <i class="fas fa-chevron-right"></i> Services</li>
+                                    <li> <i class="fas fa-chevron-right"></i>  Insurancee</li>
+                                    <li> <i class="fas fa-chevron-right"></i>  Agency</li>
+                                    <li> <i class="fas fa-chevron-right"></i> Tourism</li>
+                                    <li> <i class="fas fa-chevron-right"></i>  Payment</li>
+                                </ul>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row background-blue">
+                        <p>THE BEST WORDPRESS TRAVEL THEME</p>
+                        <p>COPYRIGHT NICDARK THEMES 2018</p>
+                    </div>
+                </div>
+            
+
+            </div>
+
+        </div>
+    </div>
+    <script language="JavaScript" type="text/javascript">
+      
+        $(document).ready(function() {
+     $(window).scroll(function(event) {
+        var pos_body = $('html,body').scrollTop();
+       //  console.log(pos_body);
+        if(pos_body>600){
+         // alert('hihi');
+           $('.class_header').addClass('mau-nen-menu');
+        }
+        
+        else {
+          $('.class_header').removeClass('mau-nen-menu');
+        }
+      //   if(pos_body>1200){
+      //      $('.back-to-top').addClass('hien-ra');
+      //   }
+      //   else{
+      //      $('.back-to-top').removeClass('hien-ra');
+      //   }
+     });
+     
+  });
+      </script>
+   <script>
+   
+          // Mỗi slide sẽ có một chỉ số của riêng nó, để đơn giản chúng ta sẽ gán chỉ số mảng cho các slide
+          var slideIndex = 0;
+          // Cho ta biết chúng ta đang ở slide nào
+          var currentSlideIndex = 0;
+          // Mảng lưu các slide của chúng ta
+          var slideArray = [];
+           
+          // Hàm này sẽ giúp chúng ta tạo ra các đối tượng slide
+          // bao gồm: tiêu đề, mô tả, ảnh, đường dẫn khi nhấp vào button trên slide, 
+          // và id của mỗi slide
+          function Slide(title, subtitle, background, link) {
+             this.title = title;
+             this.subtitle = subtitle;
+            this.background = background;
+            this.link = link;
+            // we need an id to target later using getElementById
+            this.id = slideIndex;
+            // Add one to the index for the next slide number
+            slideIndex++;
+            // Add this Slide to our array
+            slideArray.push(this);
+          }
+           
+           
+          // Tạo các đối tượng slide, bạn có thể tạo nhiều hơn
+           
+          var walkingDead = new Slide(
+            "The Walking Dead",
+            "A show about fighting zombies",
+            "assets/img/package-3.jpg",
+           "http://www.amc.com/shows/the-walking-dead"
+          );
+           
+          var bigBang = new Slide(
+            "The Big Bang Theory",
+            "A show about Sheldon",
+            "assets/img/parallax-4.jpg",
+           "http://www.cbs.com/shows/big_bang_theory/"
+          );
+           
+          var LastMan = new Slide(
+            "The Last Man on Earth",
+            "A show about loneliness",
+            "assets/img/parallax-4-1.jpg",
+           "http://www.fox.com/the-last-man-on-earth"
+          );
+           
+          // Từ mảng slide đã tạo, ta tiến hành đưa nó vào source HTML
+          function buildSlider() {
+            // A variable to hold all our HTML
+            var myHTML;
+           
+            // Go through the Array and add the code to our HTML
+            for (var i = 0; i < slideArray.length; i++) {
+              myHTML +=
+                "<div id='" +
+                slideArray[i].id +
+                "' class='singleSlide' style='background-image:url(" +
+                slideArray[i].background +
+                 ");'>" +
+                "<div class='slideOverlay'>" +
+                "<h1>" +
+                slideArray[i].title +
+                "</h1>" +
+                "<h4>" +
+                slideArray[i].subtitle +
+                "</h4>" +
+                "<a href='" +
+                slideArray[i].link +
+                "' target='_blank'>Open Link</a>" +
+                "</div>" +
+                "</div>";
+            }
+           
+            // Đưa HTML chúng ta vừa tạo vào id #mySlider
+            document.getElementById("mySlider").innerHTML = myHTML;
+           
+            // Đồng thời hiển thị slide đầu tiên
+            //document.getElementById( currentSlideIndex).style.left = 0;
+          }
+           
+          // Gọi hàm thực thi
+          buildSlider();
+          
+  
+          var stt = 0;
+          var endImg = $(".singleSlide:last").attr("id");
+  
+          var changeImg = function(stt) 
+          {
+              $(".singleSlide").hide();
+              $(".singleSlide").eq(stt).fadeIn(500);
+              $("button").removeClass("active");
+              $("button").eq(stt).addClass("active");
+      
+             clearInterval(interval);
+             timer();
+          };
+  
+          $("button").click(function() 
+          {
+              stt = $(this).attr("id");
+              //console.log(stt)
+              changeImg(stt);
+              
+          });
+  
+          function next () 
+          {
+              if (++stt > endImg) {
+                  stt = 0;
+              }
+              changeImg(stt);
+      
+          };
+  
+          var interval;
+          var timer = function () {
+              interval = setInterval(function () {
+                  next () ;
+              }, 5000);
+          };
+          timer();
+  </script>
+  <script>
+  
+        var navRight=document.getElementById('nav-moble')
+      // console.log(navRight);
+  //   //  var overlay=document.getElementById('overlay');
+        var closedMenu= document.getElementById('closed-menu')
+      var mobleMenu=document.getElementById('moble-menu');
+    //  console.log(mobleMenu);
+  
+      mobleMenu.onclick= function() {
+          // navRight.style.display='block';
+          navRight.style.transform = "translate(0)"
+  
+      }
+      closedMenu.onclick=function() {
+          // navRight.style.display='none';
+          navRight.style.transform = "translate(100%)"
+  
+         
+          
+      }
+      
+  </script>
+</body>
+</html>
